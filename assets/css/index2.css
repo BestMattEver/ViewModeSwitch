@@ -9,7 +9,9 @@ header{
 
 .store{
   border: 3px solid rgb(92, 184, 236);
-  margin:5px 5px;
+  margin: 5px 5px;
+  margin-left: 40px;
+  box-sizing: border-box;
   /*width:1024px;*/
 }
 
@@ -29,27 +31,31 @@ header{
 }
 /* so in this stylesheet, I dont need to have a hover solution for the LIST selection, since it is already selected.*/
 /* instead just the GRID selection needs a hover. however in the OTHER stylesheet, i'll need the oppsite*/
-.switch #list{
+.switch #list:hover{
   color: rgb(92, 184, 236);
 
 }
 
-.switch #grid:hover{
-  color:rgb(92, 184, 236);
+.switch #grid{
+  color: rgb(92, 184, 236);
 }
 
 section{/*this represents one store item*/
-  display: block;
-  width:100%;
-  height: 150px;
-  margin-top: 1%;
-  margin-bottom:1%;
+  display: inline-block;
+  width:30%;
+  height: 60%;
+  vertical-align: top;
+  margin-left:1%;
+  margin-right:1%;
+  margin-top: 3%;
+  margin-bottom:3%;
+  text-align:center;
   /*background:lightgreen;*/
   /*box-sizing: border-box;*/
 }
 
 .pic{
-  display: inline-block;
+  display: block;
   vertical-align: middle;
 
   /*margin-bottom: 50px;*/
@@ -57,49 +63,59 @@ section{/*this represents one store item*/
 }
 
 .title{
-  display: inline-block;
+  display: block;
   color: rgb(92, 184, 236);
-  font-size: 1.4em;
+  font-size: 1.7em;
   font-weight:900;
-
+  margin-top: 20px;
+  margin-left: 25%;
   box-sizing: border-box;
-  width:200px;
+  width:175px;
   /*background:red;*/
   vertical-align: middle;
 }
 
 .price{
-  display: inline-block;
+  display: block;
   color: #bbb;
   font-size: 1.3em;
-  /*background:pink;*/
+  padding-left: 40%;
   vertical-align: middle;
   width: 35px;
-  padding-right: 50px;
+  margin-top:20px;
+
+  /*background:pink;*/
 }
 
 .description{
-  display: inline-block;
+  display: block;
   /*background:lightcoral;*/
   vertical-align: middle;
+  margin-left: 20%;
   font-size: .9em;
-  padding-right: 35px;
+  padding-top:20px;
   box-sizing: border-box;;
-  width: 375px;
+  width: 200px;
+  height: 100px;
   color: rgb(92, 184, 236);
 }
 
-.btn{
+a{
   border-radius: 4px;
   color: #fff;
   font-size: 1.1em;
-  display: inline-block;
+  display: block;
   background:rgb(92, 184, 236);
   border: 0px solid rgb(92, 184, 236);
   width: 130px;
   height:40px;
   vertical-align: middle;
+  text-align:center;
+  padding-top: 12px;
+  text-decoration: none;
+  box-sizing:border-box;
+  margin-left: 25px;;
 }
-.btn:hover{
+a:hover{
   background: rgb(76, 151, 194);
 }
